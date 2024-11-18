@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     participant browser
     participant server
@@ -8,3 +9,4 @@ sequenceDiagram
     deactivate server
 
     Note right of browser: Request is a JSON object that consist of a content and a date. Once the server has handled the request, it sends back the status code 201 and no other HTTP requests are needed. The browser handles the process of refreshing the page using code, not using new requests.
+```
