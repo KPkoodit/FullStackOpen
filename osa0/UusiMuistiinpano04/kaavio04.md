@@ -25,7 +25,7 @@ sequenceDiagram
     server-->>browser: the JavaScript file
     deactivate server
 
-    Note right of browser: The browser starts executing JavaScript from the file that causes fetching the JSON data from the server.
+    Note right of browser: The browser starts executing JavaScript from the file and it causes fetching the JSON data from the server.
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
