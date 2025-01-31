@@ -105,7 +105,7 @@ const App = () => {
 
   useEffect(() => {
     numberService
-      .getAll()
+      .getAllNumbers()
       .then(response => {
         setPersons(response.data)
       })
@@ -122,7 +122,7 @@ const App = () => {
         const updatedPersonObject = {...personToUpdate, number: newNumber} 
         
         numberService
-          .update(id, updatedPersonObject)
+          .updateNumber(id, updatedPersonObject)
           .then(response => {
             setInfoMessage(`${name} updated`)
             setTimeout(() => {
@@ -149,7 +149,7 @@ const App = () => {
       }
 
       numberService
-        .create(nameObject)
+        .createNumber(nameObject)
         .then(response => {
           setInfoMessage(`${response.data.name} added`)
           setTimeout(() => {
